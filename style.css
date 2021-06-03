@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.navbar-brand {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #ddd; */
+  min-height: 100vh;
+  font-size: 18px;
+  /* font-family: Oswald, Roboto, Arial, Helvetica, sans-serif; */
+}
+
+section {
+  padding-top: 2rem;
+}
+
+.jumbotron {
+  margin-top: 5rem;
+}
+
+.grid {
+  display: flex;
+}
+
+#features {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: rgb(252, 95, 121);
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* Gallery */
+.gallery {
+  margin: 50px;
+  order: 4;
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img {
+  width: 100%;
+}
+
+#subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #eee;
+}
+
+#subscription > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#subscription input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* #subscription input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+} */
+
+@media (max-width: 650px) {
+  #subscription {
+    margin-top: 120px;
+  }
+}
